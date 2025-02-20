@@ -160,34 +160,21 @@ var swiper = new Swiper(".blogs-slider", {
 });
 
 
-
 function downloadPDF() {
     var link = document.createElement('a');
-    link.href = 'path-to-your-file.pdf';  // استبدل بمسار الملف
-    link.download = 'filename.pdf'; // اسم الملف عند التنزيل
+    link.href = 'path-to-your-file.pdf'; 
+    link.download = 'filename.pdf'; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
 }
 
-// الحصول على الزر
-const toggleButton = document.getElementById('dark-mode-toggle');
 
-// عند الضغط على الزر
-toggleButton.addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
-
-  // حفظ الوضعية في LocalStorage
-  if (document.body.classList.contains('dark-mode')) {
-    localStorage.setItem('theme', 'dark');
-  } else {
-    localStorage.setItem('theme', 'light');
-  }
-});
-
-
-function toggleDarkMode() {
-    document.body.classList.toggle("dark-mode");
-  }
-
+// إغلاق النافذة عند النقر خارجها
+window.onclick = function(event) {
+    let modal = document.getElementById("myModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}
   
