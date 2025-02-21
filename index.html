@@ -36,8 +36,8 @@
 
             <div class="icons">
                 <div id="search-btn" class="fas fa-search"></div>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-shopping-cart"></a>
+                <a id="heart" href="#" class="fas fa-heart"></a>
+                <a id="cart" href="#" class="fas fa-shopping-cart"></a>
                 <div id="login-btn" class="fas fa-user"></div>
             </div>
 
@@ -66,9 +66,9 @@
     <nav class="bottom-navbar">
         <a href="#home" class="fas fa-home"></a>
         <a href="#featured" class="fas fa-list"></a>
-        <a href="#arrivals" class="fas fa-tags"></a>
+        <a href="#arrivals" class="fas fa-bookmark"></a>
         <a href="#reviews" class="fas fa-comments"></a>
-        <a href="#blogs" class="fas fa-blog"></a>
+        <a href="#blogs" class="fab fa-facebook-messenger"></a>
 
     </nav>
     <!-- bottom navbar end -->
@@ -121,14 +121,12 @@
             </div>
             <div class="swiper books-slider">
                 <div class="swiper-wrapper">
-                    <a href="#" class="swiper-slide"><img src="./image/أماريتا.webp" alt="رواية اماريتا"></a>
-                    <a href="#" class="swiper-slide"><img src="./image/Webp (1).webp"
-                            alt=" رواية في قلبي أنثى عبرية"></a>
-                    <a href="#" class="swiper-slide"><img src="./image/الفيل الأزرق.jpg" alt="رواية الفيل الأزرق"></a>
-                    <a href="#" class="swiper-slide"><img src="./image/سكان أطلس.jpg" alt="رواية سكان أطلس"></a>
-                    <a href="#" class="swiper-slide"><img src="./image/المتكسرة copy.jpg"
-                            alt="رواية الأجنحة المتكسرة"></a>
-                    <a href="#" class="swiper-slide"><img src="./image/Webp.webp" alt="رواية خوف"></a>
+                    <a href="./pdf/- شقة في باريس.pdf" class="swiper-slide" download="filename.pdf"><img src="./image/شقة في باريس.jpg" alt="رواية شقة في باريس"></a>
+                    <a href="./pdf/المتمرد .pdf" class="swiper-slide" download="filename.pdf"><img src="./image/المتمرد.webp" alt="رواية المتمرد"></a>
+                    <a href="./pdf/- رواية مئة عام من العزلة لـ غابرييل غارسيا ماركيز.pdf" class="swiper-slide" download="filename.pdf"><img src="./image/مئة عام من العزلة.jpg" alt="رواية مئة عام من العزلة"></a>
+                    <a href="./pdf/سكان أطلس.pdf" class="swiper-slide" download="filename.pdf"><img src="./image/سكان أطلس.jpg" alt="رواية سكان أطلس"></a>
+                    <a href="./pdf/الأجنحة المتكسرة_1.pdf" class="swiper-slide" download="filename.pdf"><img src="./image/المتكسرة copy.jpg" alt="رواية الأجنحة المتكسرة"></a>
+                    <a href="./pdf/عمارة الموت.pdf" class="swiper-slide" download="filename.pdf"><img src="./image/عمارة الموت.jpg" alt="رواية عمارة الموت"></a>
                 </div>
                 <img src="image/stand.png" class="stand" alt="صورة رف">
             </div>
@@ -184,7 +182,7 @@
 
     <section class="featured" id="featured">
 
-        <h1 class="heading"> <span>المميزة</span> </h1>
+        <h1 class="heading  m-auto pb-3"> <span>المميزة</span> </h1>
 
         <div class="swiper featured-slider">
 
@@ -193,8 +191,8 @@
                 <div class="swiper-slide box">
                     <div class="icons">
                         <a href="#" class="fas fa-search"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
+                        <a id="heart" href="#" class="fas fa-heart"></a>
+                        <a id="eye" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
                         <img src="image/الدوبامين.webp" alt="رواية تحت تأثير الدوبامين">
@@ -203,7 +201,7 @@
                         <h3>تحت تأثير الدوبامين</h3>
                         <div class="price">150 L.E <span>250 L.E</span></div>
                         <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                        <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                        <a href="./pdf/رواية تحت تأثير الدوبامين.pdf" download="filename.pdf" class="btn">تحميل <i
                                 class="fas fa-cloud-download-alt"></i></a>
 
                     </div>
@@ -212,8 +210,8 @@
                 <div class="swiper-slide box">
                     <div class="icons">
                         <a href="#" class="fas fa-search"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
+                        <a id="heart" href="#" class="fas fa-heart"></a>
+                        <a id="eye" href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
                         <img src="./image/القهوة.webp" alt="كتاب ركن قهوة">
@@ -222,7 +220,7 @@
                         <h3>رُكــن قهـوة</h3>
                         <div class="price">150 L.E <span>250 L.E</span></div>
                         <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                        <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                        <a href="./pdf/ركن قهوة.pdf" download="filename.pdf" class="btn">تحميل <i
                                 class="fas fa-cloud-download-alt"></i></a>
                     </div>
                 </div>
@@ -230,26 +228,26 @@
                 <div class="swiper-slide box">
                     <div class="icons">
                         <a href="#" class="fas fa-search"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
+                        <a id="heart" href="#" class="fas fa-heart"></a>
+                        <a id="eye" href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
                         <img src="./image/التحرر.webp" alt="كتاب قوانين التحرر من الصراع النفسى">
                     </div>
                     <div class="content">
-                        <h3>قوانين التحرر من الصراع النفسي</h3>
+                        <h3> التحرر من الصراع النفسي</h3>
                         <div class="price">150 L.E <span>250 L.E</span></div>
                         <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                        <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                class="fas fa-cloud-download-alt"></i></a>
+                        <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                            class="fas fa-cloud-download-alt"></i></button>
                     </div>
                 </div>
 
                 <div class="swiper-slide box">
                     <div class="icons">
                         <a href="#" class="fas fa-search"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
+                        <a id="heart" href="#" class="fas fa-heart"></a>
+                        <a id="eye" href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
                         <img src="./image/بعثرة.webp" alt="كتاب بعثرة روح">
@@ -257,8 +255,8 @@
                     <div class="content">
                         <h3>بعثرة روح</h3>
                         <div class="price">100 L.E <span>250 L.E</span></div>
-                        <<a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                        <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
+                            <a href="./pdf/بعثرة روح.pdf" download="filename.pdf" class="btn">تحميل <i
                                     class="fas fa-cloud-download-alt"></i></a>
 
                     </div>
@@ -267,8 +265,8 @@
                 <div class="swiper-slide box">
                     <div class="icons">
                         <a href="#" class="fas fa-search"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
+                        <a id="heart" href="#" class="fas fa-heart"></a>
+                        <a id="eye" href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
                         <img src="./image/فتاة.webp" alt="رواية فتاة من ورق">
@@ -277,7 +275,7 @@
                         <h3>فتاة من ورق</h3>
                         <div class="price">100 L.E <span>250 L.E</span></div>
                         <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                        <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                        <a href="./pdf/- فتاة من ورق.pdf" download="filename.pdf" class="btn">تحميل <i
                                 class="fas fa-cloud-download-alt"></i></a>
                     </div>
                 </div>
@@ -285,8 +283,8 @@
                 <div class="swiper-slide box">
                     <div class="icons">
                         <a href="#" class="fas fa-search"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
+                        <a id="heart" href="#" class="fas fa-heart"></a>
+                        <a id="eye" href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
                         <img src="./image/الفيل الأزرق.jpg" alt="رواية الفيل الأزرق">
@@ -295,8 +293,8 @@
                         <h3>الفيل الأزرق</h3>
                         <div class="price">200 L.E <span>250 L.E</span></div>
                         <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                        <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                class="fas fa-cloud-download-alt"></i></a>
+                        <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                            class="fas fa-cloud-download-alt"></i></button>
 
                     </div>
                 </div>
@@ -304,8 +302,8 @@
                 <div class="swiper-slide box">
                     <div class="icons">
                         <a href="#" class="fas fa-search"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
+                        <a id="heart" href="#" class="fas fa-heart"></a>
+                        <a id="eye" href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
                         <img src="./image/أبابيل.jpg" alt="رواية أبابيل">
@@ -314,16 +312,16 @@
                         <h3>أبابيل</h3>
                         <div class="price">250 L.E <span>370 L.E</span></div>
                         <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                        <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                class="fas fa-cloud-download-alt"></i></a>
+                        <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                            class="fas fa-cloud-download-alt"></i></button>
                     </div>
                 </div>
 
                 <div class="swiper-slide box">
                     <div class="icons">
                         <a href="#" class="fas fa-search"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
+                        <a id="heart" href="#" class="fas fa-heart"></a>
+                        <a id="eye" href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
                         <img src="./image/فن.webp" alt="كتاب فن اللامبالة">
@@ -332,15 +330,15 @@
                         <h3>فن اللامبالة</h3>
                         <div class="price">150 L.E <span>250 L.E</span></div>
                         <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                        <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                class="fas fa-cloud-download-alt"></i></a>
+                        <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                            class="fas fa-cloud-download-alt"></i></button>
                     </div>
                 </div>
 
                 <div class="swiper-slide box">
                     <div class="icons">
                         <a href="#" class="fas fa-search"></a>
-                        <a href="#" class="fas fa-heart"></a>
+                        <a id="heart" href="#" class="fas fa-heart"></a>
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
@@ -350,7 +348,7 @@
                         <h3>رواية 1984</h3>
                         <div class="price">150 L.E <span>250 L.E</span></div>
                         <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                        <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                        <a href="./pdf/رواية 1984.pdf" download="filename.pdf" class="btn">تحميل <i
                                 class="fas fa-cloud-download-alt"></i></a>
                     </div>
                 </div>
@@ -358,7 +356,7 @@
                 <div class="swiper-slide box">
                     <div class="icons">
                         <a href="#" class="fas fa-search"></a>
-                        <a href="#" class="fas fa-heart"></a>
+                        <a id="heart" href="#" class="fas fa-heart"></a>
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
@@ -368,8 +366,8 @@
                         <h3>في قلبي أنثى عبرية</h3>
                         <div class="price">175 L.E <span>250 L.E</span></div>
                         <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                        <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                class="fas fa-cloud-download-alt"></i></a>
+                        <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                            class="fas fa-cloud-download-alt"></i></button>
                     </div>
                 </div>
 
@@ -399,8 +397,7 @@
 
     <section class="arrivals" id="arrivals">
 
-        <h1 class="heading"> <span>الروايات</span> </h1>
-
+        <h1 class="heading m-auto pb-3"> <span>الروايات</span> </h1>
         <div class="swiper arrivals-slider">
 
             <div class="swiper-wrapper">
@@ -419,7 +416,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                            <a href="./pdf/ولنا في الحلال لقاء.pdf" download="filename.pdf" class="btn">تحميل <i
                                     class="fas fa-cloud-download-alt"></i></a>
                         </div>
                     </div>
@@ -440,8 +437,8 @@
                             <i class="fas fa-star"></i>
                             <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                    class="fas fa-cloud-download-alt"></i></a>
+                            <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                                class="fas fa-cloud-download-alt"></i></button>
                         </div>
                     </div>
                 </div>
@@ -459,8 +456,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                    class="fas fa-cloud-download-alt"></i></a>
+                            <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                                class="fas fa-cloud-download-alt"></i></button>
                         </div>
                     </div>
                 </div>
@@ -477,7 +474,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                            <a href="./pdf/الجزار.pdf" download="filename.pdf" class="btn">تحميل <i
                                     class="fas fa-cloud-download-alt"></i></a>
                         </div>
                     </div>
@@ -496,7 +493,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                            <a href="./pdf/- رواية الملجا الاخير.pdf" download="filename.pdf" class="btn">تحميل <i
                                     class="fas fa-cloud-download-alt"></i></a>
                         </div>
                     </div>
@@ -524,8 +521,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                    class="fas fa-cloud-download-alt"></i></a>
+                            <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                                class="fas fa-cloud-download-alt"></i></button>
                         </div>
                     </div>
                 </div>
@@ -563,8 +560,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                    class="fas fa-cloud-download-alt"></i></a>
+                            <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                                class="fas fa-cloud-download-alt"></i></button>
                         </div>
                     </div>
                 </div>>
@@ -583,7 +580,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                            <a href="./pdf/يوتوبيا.pdf" download="filename.pdf" class="btn">تحميل <i
                                     class="fas fa-cloud-download-alt"></i></a>
                         </div>
                     </div>
@@ -601,8 +598,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                    class="fas fa-cloud-download-alt"></i></a>
+                            <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                                class="fas fa-cloud-download-alt"></i></button>
                         </div>
                     </div>
                 </div>
@@ -649,8 +646,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                    class="fas fa-cloud-download-alt"></i></a>
+                            <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                                class="fas fa-cloud-download-alt"></i></button>
                         </div>
                     </div>
                 </div>
@@ -668,8 +665,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                    class="fas fa-cloud-download-alt"></i></a>
+                            <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                                class="fas fa-cloud-download-alt"></i></button>
                         </div>
                     </div>
                 </div>
@@ -685,8 +682,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                    class="fas fa-cloud-download-alt"></i></a>
+                            <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                                class="fas fa-cloud-download-alt"></i></button>
                         </div>
                     </div>
                 </div>
@@ -702,8 +699,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                    class="fas fa-cloud-download-alt"></i></a>
+                            <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                                class="fas fa-cloud-download-alt"></i></button>
                         </div>
                     </div>
                 </div>
@@ -721,7 +718,7 @@
 
     <section class="arrivals" id="arrivals2">
 
-        <h1 class="heading"> <span>الكتــب</span> </h1>
+        <h1 class="heading  m-auto pb-3"> <span>الكتــب</span> </h1>
 
         <div class="swiper arrivals-slider">
 
@@ -741,7 +738,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                            <a href="./pdf/ألفية ابن مالك في النحو والصرف.pdf" download="filename.pdf" class="btn">تحميل <i
                                     class="fas fa-cloud-download-alt"></i></a>
                         </div>
 
@@ -781,7 +778,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                            <a href="./pdf/أنوثة طاغية.pdf" download="filename.pdf" class="btn">تحميل <i
                                     class="fas fa-cloud-download-alt"></i></a>
                         </div>
                     </div>
@@ -800,8 +797,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                    class="fas fa-cloud-download-alt"></i></a>
+                            <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                                class="fas fa-cloud-download-alt"></i></button>
                         </div>
                     </div>
                 </div>
@@ -817,7 +814,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i> <br>
                             <<a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                                <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                                <a href="./pdf/النظرات.pdf" download="filename.pdf" class="btn">تحميل <i
                                         class="fas fa-cloud-download-alt"></i></a>
                         </div>
                     </div>
@@ -845,7 +842,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                            <a href="./pdf/- تعلم HTML.pdf" download="filename.pdf" class="btn">تحميل <i
                                     class="fas fa-cloud-download-alt"></i></a>
                         </div>
                     </div>
@@ -864,7 +861,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                            <a href="./pdf/تفسير الأحلام .. إبن سيرين.pdf" download="filename.pdf" class="btn">تحميل <i
                                     class="fas fa-cloud-download-alt"></i></a>
                         </div>
                     </div>
@@ -884,7 +881,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                            <a href="./pdf/تفسير ابن كثير.pdf" download="filename.pdf" class="btn">تحميل <i
                                     class="fas fa-cloud-download-alt"></i></a>
                         </div>
                     </div>
@@ -902,8 +899,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                    class="fas fa-cloud-download-alt"></i></a>
+                            <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                                class="fas fa-cloud-download-alt"></i></button>
                         </div>
                     </div>
                 </div>
@@ -920,7 +917,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                            <a href="./pdf/شمس المعارف.pdf" download="filename.pdf" class="btn">تحميل <i
                                     class="fas fa-cloud-download-alt"></i></a>
                         </div>
                     </div>
@@ -946,8 +943,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                    class="fas fa-cloud-download-alt"></i></a>
+                            <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                                class="fas fa-cloud-download-alt"></i></button>
                         </div>
                     </div>
                 </div>
@@ -965,8 +962,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                    class="fas fa-cloud-download-alt"></i></a>
+                            <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                                class="fas fa-cloud-download-alt"></i></button>
                         </div>
                     </div>
                 </div>
@@ -985,8 +982,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                    class="fas fa-cloud-download-alt"></i></a>
+                            <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                                class="fas fa-cloud-download-alt"></i></button>
                         </div>
                     </div>
                 </div>
@@ -1004,7 +1001,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                            <a href="./pdf/- معجزة الصباح - هال إلرود.pdf" download="filename.pdf" class="btn">تحميل <i
                                     class="fas fa-cloud-download-alt"></i></a>
                         </div>
                     </div>
@@ -1021,7 +1018,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                            <a href="./pdf/مبادئ_الفلسفة.pdf" download="filename.pdf" class="btn">تحميل <i
                                     class="fas fa-cloud-download-alt"></i></a>
                         </div>
                     </div>
@@ -1041,7 +1038,7 @@
 
     <section class="arrivals" id="arrivals3">
 
-        <h1 class="heading"> <span>قصص أطفال</span> </h1>
+        <h1 class="heading  m-auto pb-3"> <span>قصص أطفال</span> </h1>
 
         <div class="swiper arrivals-slider">
 
@@ -1061,7 +1058,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                            <a href="./pdf/أبو خربوش سلطان القرود.pdf" download="filename.pdf" class="btn">تحميل <i
                                     class="fas fa-cloud-download-alt"></i></a>
                         </div>
                     </div>
@@ -1081,7 +1078,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                            <a href="./pdf/أميرة صغيرة . قصة سالي.pdf" download="filename.pdf" class="btn">تحميل <i
                                     class="fas fa-cloud-download-alt"></i></a>
                         </div>
                     </div>
@@ -1100,8 +1097,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                    class="fas fa-cloud-download-alt"></i></a>
+                            <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                                class="fas fa-cloud-download-alt"></i></button>
                         </div>
                     </div>
                 </div>
@@ -1119,7 +1116,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                            <a href="./pdf/الأرنب والصياد.pdf" download="filename.pdf" class="btn">تحميل <i
                                     class="fas fa-cloud-download-alt"></i></a>
                         </div>
                     </div>
@@ -1138,7 +1135,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                            <a href="./pdf/الحمار_القارئ.pdf" download="filename.pdf" class="btn">تحميل <i
                                     class="fas fa-cloud-download-alt"></i></a>
                         </div>
                     </div>
@@ -1166,8 +1163,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                    class="fas fa-cloud-download-alt"></i></a>
+                            <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                                class="fas fa-cloud-download-alt"></i></button>
                         </div>
                     </div>
                 </div>
@@ -1185,8 +1182,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                    class="fas fa-cloud-download-alt"></i></a>
+                            <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                                class="fas fa-cloud-download-alt"></i></button>
                         </div>
                     </div>
                 </div>
@@ -1205,7 +1202,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                            <a href="./pdf/دندش العجيب.pdf" download="filename.pdf" class="btn">تحميل <i
                                     class="fas fa-cloud-download-alt"></i></a>
                         </div>
                     </div>
@@ -1225,8 +1222,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                    class="fas fa-cloud-download-alt"></i></a>
+                            <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                                class="fas fa-cloud-download-alt"></i></button>
                         </div>
                     </div>
                 </div>
@@ -1244,7 +1241,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                            <a href="./pdf/السندباد.pdf download="filename.pdf" class="btn">تحميل <i
                                     class="fas fa-cloud-download-alt"></i></a>
                         </div>
                     </div>
@@ -1271,8 +1268,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                    class="fas fa-cloud-download-alt"></i></a>
+                            <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                                class="fas fa-cloud-download-alt"></i></button>
                         </div>
                     </div>
                 </div>
@@ -1290,7 +1287,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                            <a href="./pdf/قوة الصغر.pdf" download="filename.pdf" class="btn">تحميل <i
                                     class="fas fa-cloud-download-alt"></i></a>
                         </div>
                     </div>
@@ -1310,8 +1307,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
-                                    class="fas fa-cloud-download-alt"></i></a>
+                            <button dir="rtl" class="btn" onclick="openModal()">تحميل <i
+                                class="fas fa-cloud-download-alt"></i></button>
                         </div>
                     </div>
                 </div>
@@ -1330,7 +1327,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i> <br>
                             <a href="#" class="btn">شراء <i class="fas fa-cart-plus"></i></a>
-                            <a href="./pdf/1ث امتحان.pdf" download="filename.pdf" class="btn">تحميل <i
+                            <a href="./pdf/شمشون الجبار.pdf" download="filename.pdf" class="btn">تحميل <i
                                     class="fas fa-cloud-download-alt"></i></a>
                         </div>
                     </div>
@@ -1404,9 +1401,11 @@
                         class="fab fa-facebook"></i></a>
                 <a id="insta" href="https://www.instagram.com/ahmed.zakaria77/"><i class="fab fa-instagram"
                         id="insta"></i></a>
-                <a id="git" href="https://github.com/Ahmed-Zakaria77"><i class="fab fa-github" id="git"></i></a>
+                      <a id="git" href="https://github.com/Ahmed-Zakaria77"><i class="fab fa-github" id="git"></i></a>
             </div>
+           
         </div>
+       
     </footer>
     <!-- Footer end -->
 
@@ -1419,10 +1418,10 @@
         </div>
     </div>
     <!-- msg end -->
-    <!-- loader  -->
 
+    <!-- loader  -->
     <div class="loader-container">
-        <img src="./image/book-loader_v1.4_transp_800x600 (1).gif">
+        <img src="./image/load.gif">
     </div>
     <!-- loader end  -->
 

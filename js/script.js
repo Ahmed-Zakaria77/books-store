@@ -169,8 +169,14 @@ function downloadPDF() {
     document.body.removeChild(link);
 }
 
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
 
-// إغلاق النافذة عند النقر خارجها
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
 window.onclick = function(event) {
     let modal = document.getElementById("myModal");
     if (event.target === modal) {

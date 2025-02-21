@@ -55,48 +55,6 @@ html::-webkit-scrollbar-thumb {
     background: #0097b2;
 }
 
-.dark-mode-toggle {
-    width: 60px;
-    height: 30px;
-    background-color: #000000;
-    border-radius: 50px;
-    position: relative;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    transition: background-color 0.5s ease;
-}
-
-.dark-mode-toggle .circle {
-    width: 20px;
-    height: 20px;
-    background-color: #ffffff;
-    border: 3px black solid;
-    border-radius: 50%;
-    transition: transform 0.5s ease, background-color 0.5s ease;
-    transform: translateX(0);
-}
-
-body.dark-mode .dark-mode-toggle {
-    background-color: #000000;
-    color: #fff;
-}
-
-body.dark-mode .dark-mode-toggle .circle {
-    transform: translateX(30px);
-    background-color: #0097b2;
-    color: #fff;
-}
-
-body.dark-mode {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-h1 .dark-mode {
-    color: #fff;
-}
 
 img {
     cursor: pointer;
@@ -105,6 +63,68 @@ img {
 section {
     padding: 5rem 9%;
 }
+
+/* Style the ribbon */
+.ribbon {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.ribbon__content {
+    left: -25px;
+    top: 30px;
+    transform: rotate(45deg);
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 10px 0;
+    background-color: #700606;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px dotted #fff;
+    outline: 5px solid #f5cd79;
+    font-size: medium;
+}
+
+/* Pseudo-elements for ribbon corners */
+.ribbon::before,
+.ribbon::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.ribbon::before {
+    top: 0;
+    left: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-color: #f19066;
+}
+
+.ribbon::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-color: #f19066;
+}
+
+.card h1 {
+    color: #fff;
+    font-size: 1000px;
+
+}
+
 
 .heading {
     text-align: center;
@@ -152,6 +172,16 @@ section {
 a {
     direction: rtl;
 }
+#heart:hover{
+    color: rgb(146, 7, 7);
+}
+#cart:hover{
+    color: green;
+}
+#eye:hover{
+    color: blueviolet;
+}
+/* --------headar----- */
 
 .header .header-1 {
     background: #ffffff;
@@ -248,6 +278,9 @@ a {
     z-index: 1000;
 
 }
+/* --------headar end ----- */
+
+/* --------Nav bar----- */
 
 .bottom-navbar {
     text-align: center;
@@ -273,6 +306,9 @@ a {
 a {
     text-decoration: none;
 }
+/* --------Navbar end----- */
+
+/* --------login----- */
 
 .login-form-container {
     display: flex;
@@ -368,6 +404,9 @@ a {
     color: var(--black);
     cursor: pointer;
 }
+/* --------login end----- */
+
+/* --------home----- */
 
 .home {
     background: url(../image/banner-bg.jpg) no-repeat;
@@ -422,10 +461,9 @@ a {
     line-height: 2;
     padding: 1rem 0;
 }
+/* --------home end----- */
 
-.home .row .content .btn {
-    margin-left: 200px;
-}
+/* --------Icon----- */
 
 .icons-container {
     display: grid;
@@ -456,6 +494,9 @@ a {
     font-size: 1.4rem;
     color: var(--light-color);
 }
+/* --------Icon end----- */
+
+/* --------Featured----- */
 
 .featured .featured-slider .box {
     margin: 2rem 0;
@@ -548,6 +589,10 @@ a {
     border-radius: 50%;
 }
 
+/* --------Featured end----- */
+
+/* --------Newsletter----- */
+
 .newsletter {
     background: url(../image/letter-bg.jpg) no-repeat;
     background-size: cover;
@@ -578,6 +623,9 @@ a {
     border-radius: .5rem;
     text-transform: none;
 }
+/* --------Newsletter end----- */
+
+/* --------arrivals----- */
 
 .arrivals .arrivals-slider .box {
     display: flex;
@@ -627,46 +675,221 @@ a {
     font-size: 1.5rem;
     color: #fff;
 }
+/* --------arrivals end----- */
 
-.deal {
-    background: #f3f3f3;
+/* --------contact----- */
+
+.contact-us h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-us form {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+.contact-us form .half-width {
+    width: calc(50% - 10px);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.contact-us form div .half-width:first-child {
+    float: left;
+}
+
+.contact-us form div .half-width:nth-child(2) {
+    float: right;
+}
+
+.contact-us form .full-width {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.main-btn {
+
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+
+
+/* --------contact end----- */
+
+
+/* ----------- Footer------ */
+
+footer {
+    padding: 10px 0;
+    background-color: #000000;
+}
+
+
+footer .container {
+    text-align: center;
+}
+
+
+footer .container .icons a {
+    margin: 20px 5px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+footer .container .icons a:hover {
+    color: #0097b2;
+}
+
+footer .container .icons span {
+    margin: 10px;
+}
+
+footer .container .copy-right {
+    color: #fff;
+}
+
+footer .container .copy-right span {
+    color: #0097b2;
+}
+
+
+--------------- button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* ----------- msg model------ */
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color:#dadada;
+    color: #000000;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    height: 200px;
+    margin: 15% auto;
+    text-align: center;
+    position: relative;
+    font-size: x-large;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+}
+/* ----------- msg model end------ */
+
+/* ----------- roller text------ */
+
+------------------- .main {
+    height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    justify-content: center;
+    text-align: center;
 }
 
-.deal .content {
-    flex: 1 1 42rem;
-}
-
-.deal .image {
-    flex: 1 1 42rem;
-}
-
-.deal .image img {
-    width: 100%;
-}
-
-.deal .content h3 {
-    color: var(--green);
-    font-size: 2.5rem;
-    padding-bottom: .5rem;
-}
-
-.deal .content h1 {
-    color: var(--black);
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #F1FAEE;
     font-size: 4rem;
 }
 
-.deal .content p {
-    padding: 1rem 0;
-    color: var(--light-color);
-    font-size: 1.4rem;
-    line-height: 2;
+.roller {
+    height: 4.125rem;
+    line-height: 4rem;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
 }
 
 
+#spare-time {
+    font-style: italic;
+    letter-spacing: 1rem;
+    margin-top: 0;
+    color: #A8DADC;
+}
+
+.roller #rolltext {
+    font-size: xx-large;
+    position: absolute;
+    top: 0;
+    margin-right: 450px;
+    animation: slide 5s infinite;
+}
+
+@keyframes slide {
+    0% {
+        top: 0;
+    }
+
+    25% {
+        top: -4rem;
+    }
+
+    50% {
+        top: -8rem;
+    }
+
+    72.5% {
+        top: -12.25rem;
+    }
+}
+/* ----------- roller text end------ */
+
+/* --------loader----- */
 
 .loader-container {
     position: fixed;
@@ -688,15 +911,7 @@ a {
 .loader-container img {
     height: 10rem;
 }
-
-
-
-
-
-
-
-
-
+/* --------loader end----- */
 
 /* media queries  */
 
@@ -782,275 +997,6 @@ a {
 
 }
 
-/* Style the ribbon */
-.ribbon {
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    position: absolute;
-    top: -10px;
-    right: -10px;
-}
-
-.ribbon__content {
-    left: -25px;
-    top: 30px;
-    transform: rotate(45deg);
-    position: absolute;
-    display: block;
-    width: 225px;
-    padding: 10px 0;
-    background-color: #700606;
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
-    color: #fff;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    text-transform: uppercase;
-    text-align: center;
-    border: 2px dotted #fff;
-    outline: 5px solid #f5cd79;
-    font-size: medium;
-}
-
-/* Pseudo-elements for ribbon corners */
-.ribbon::before,
-.ribbon::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    border-style: solid;
-    border-width: 5px;
-}
-
-.ribbon::before {
-    top: 0;
-    left: 0;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-color: #f19066;
-}
-
-.ribbon::after {
-    bottom: 0;
-    right: 0;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-color: #f19066;
-}
-
-.card h1 {
-    color: #fff;
-    font-size: 1000px;
-
-}
-
-
-
-.contact-us h2 {
-    text-align: center;
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 30px;
-    margin-bottom: 20px;
-}
-
-.contact-us form {
-    text-align: center;
-    width: 60%;
-    margin: 0 auto;
-}
-
-
-.contact-us form .half-width {
-    width: calc(50% - 10px);
-    padding: 10px;
-    box-sizing: border-box;
-    margin: 15px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-}
-
-.contact-us form div .half-width:first-child {
-    float: left;
-}
-
-.contact-us form div .half-width:nth-child(2) {
-    float: right;
-}
-
-.contact-us form .full-width {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    margin: 15px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-
-
-.main-btn {
-
-    margin-top: 30px;
-    padding: 10px 20px;
-    border: #ffffff;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #fff;
-    cursor: pointer;
-    transition: .5s;
-}
-
-
-/* End contact-us Section styles */
-
-
-/* Start Footer styles */
-
-footer {
-    padding: 10px 0;
-    background-color: #000000;
-}
-
-
-footer .container {
-    text-align: center;
-}
-
-
-footer .container .icons a {
-    margin: 20px 5px;
-    font-size: 30px;
-    color: #ffffff;
-}
-
-footer .container .icons a:hover {
-    color: #0097b2;
-}
-
-footer .container .icons span {
-    margin: 10px;
-}
-
-footer .container .copy-right {
-    color: #fff;
-}
-
-footer .container .copy-right span {
-    color: #0097b2;
-}
-
-
---------------- button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* تصميم النافذة المنبثقة */
-.modal {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    width: 400px;
-    height: 200px;
-    margin: 15% auto;
-    text-align: center;
-    position: relative;
-    font-size: x-large;
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 20px;
-    cursor: pointer;
-    color: red;
-}
-
-------------------- .main {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-h1 {
-    text-align: center;
-    text-transform: uppercase;
-    color: #F1FAEE;
-    font-size: 4rem;
-}
-
-.roller {
-    height: 4.125rem;
-    line-height: 4rem;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000000;
-}
-
-
-#spare-time {
-    font-style: italic;
-    letter-spacing: 1rem;
-    margin-top: 0;
-    color: #A8DADC;
-}
-
-.roller #rolltext {
-    font-size: xx-large;
-    position: absolute;
-    top: 0;
-    margin-right: 50px;
-    animation: slide 5s infinite;
-}
-
-@keyframes slide {
-    0% {
-        top: 0;
-    }
-
-    25% {
-        top: -4rem;
-    }
-
-    50% {
-        top: -8rem;
-    }
-
-    72.5% {
-        top: -12.25rem;
-    }
-}
-
 @media screen and (max-width: 600px) {
     h1 {
         text-align: center;
@@ -1093,3 +1039,4 @@ h1 {
         }
     }
 }
+
